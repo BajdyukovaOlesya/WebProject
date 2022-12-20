@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{book.Название}}</title>
+</head>
+<body link="white" alink="white" vlink="silver" bgcolor="darkseagreen" text="white" background="fon_i.jpg">
+    <table border="0" width="100%" height="100%" cellpadding="13">
+        <tr>
+            <td height="10%" width="15%">
+                <a href="/index"><img src="znak1.png" align="middle" title="Главная" width="75" height="50" hspace="6"></a>
+            </td>
+            <td height="10%" width="85%" valign="top">
+                <font size="10"><center>Топ-5 книг, которые должен прочитать каждый</center></font>
+            </td>
+        </tr>
+
+        <tr>
+            <td height="90%" width="15%" valign="top" cellpadding="5">
+                <br>  <br> <font size="4"><b><a href="/index">Главная</a></b></font><br><br>
+                <a href="master_i_margarita.html">Мастер и Маргарита </a><br>
+                <br><a href="prince.html">Маленький принц </a><br>
+                <br>={{book.Название}}=<br>
+                <br><a href="bclub.html">Бойцовский клуб</a><br>
+                <br><a href="prestuplenie_i_nakazanie.html">Преступление и наказание</a>
+            </td>
+            <td height="90%" width="85%" valign="top" bgcolor="white">
+                <br> <br>
+                <ul>
+                    <font color="black" size="5">
+                        <style>
+                            li {
+                                list-style-type: none;
+                            }
+
+                            p {
+                                line-height: 0.9 em
+                            }
+                        </style>
+                        <center>
+                            <font size="7">{{book.Название}}</font>
+                        </center>
+                        <br>
+                        <br>
+                    <li>
+                        <img src="{{book.Изображение}}" height="500" width="313" title="1984" align="left" hspace="20" vspace="20">
+                        <font color="#F6A600" size="6"></font>
+                        <br><br> <font color="#c0c0c0" size="3">{{book.Стр}} страниц          {{book.Рейтинг}} </font>
+                        <br><br><br><font color="black" size="5"><b>О книге</b></font>
+                        <br><font color="black" size="4">{{book.О_книге}}. </font>
+                    </li>
+                    <li>
+                        <br clear="all"><b>Дата написания: </b><font color="black" size="4">{{book.Дата_написания}} </font>
+                        <br><br><font color="black" size="5"><b>Жанры</b></font>
+                        <br><font color="black" size="4">{{book.Жанры}}</font>
+                        <br><br><font color="black" size="5"><b>Темы</b></font>
+                        <br><font color="black" size="4">{{book.Темы}}</font>
+                        <br><br><font color="black" size="5"><b>Ссылка на книгу </b></font>
+                        <br><font color="black" size="4"><a href={{book.Ссылка}} style="color: #ff8c00">{{book.Ссылка}}</a></font>
+                        <br><br><a href="index.html">На главную</a>
+                    </li>
+                    </font>
+                </ul>
+                <br> <br> <br>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
