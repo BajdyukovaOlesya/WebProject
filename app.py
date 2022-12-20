@@ -25,6 +25,12 @@ def inf():
 	book=u[0]
 	return render_template('base.html',book=book)
 
+@app.route('/classic')
+def infС():
+	b =  db.Table("Books",db.metadata,autoload=True,autoload_with=db.engine)
+	u=db.session.query(b).all()
+	return render_template('base2.html',book=u,x1='Классика')
+
 
 
 if __name__=="__main__": app.run(debug=True)
