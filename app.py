@@ -24,7 +24,7 @@ def index():
 def inf():
 	b =  db.Table("Books",db.metadata,autoload=True,autoload_with=db.engine)
 	u=db.session.query(b).all()
-	return render_template('base.html',book=book[0])
+	return render_template('base.html',book=u[0])
 
 @app.route('/Метрвые души')
 def inf1():
