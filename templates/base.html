@@ -7,7 +7,7 @@
     <table border="0" width="100%" height="100%" cellpadding="13">
         <tr>
             <td height="10%" width="15%">
-                <a href="/index"><img src="znak1.png" align="middle" title="Главная" width="75" height="50" hspace="6"></a>
+                <a href="/index"><img  align="middle" title="Главная" width="75" height="50" hspace="6"></a>
             </td>
             <td height="10%" width="85%" valign="top">
                 <font size="10"><center>Топ-5 книг, которые должен прочитать каждый</center></font>
@@ -17,11 +17,9 @@
         <tr>
             <td height="90%" width="15%" valign="top" cellpadding="5">
                 <br>  <br> <font size="4"><b><a href="/index">Главная</a></b></font><br><br>
-                <a href="master_i_margarita.html">Мастер и Маргарита </a><br>
-                <br><a href="prince.html">Маленький принц </a><br>
-                <br>={{book.Название}}=<br>
-                <br><a href="bclub.html">Бойцовский клуб</a><br>
-                <br><a href="prestuplenie_i_nakazanie.html">Преступление и наказание</a>
+                
+                    <br>={{book.Название}}=<br>
+                    
             </td>
             <td height="90%" width="85%" valign="top" bgcolor="white">
                 <br> <br>
@@ -37,12 +35,12 @@
                             }
                         </style>
                         <center>
-                            <font size="7">{{book.Название}}</font>
+                            <font size="7" color="black">{{book.Название}}</font>
                         </center>
                         <br>
                         <br>
                     <li>
-                        <img src="{{book.Изображение}}" height="500" width="313" title="1984" align="left" hspace="20" vspace="20">
+                        <img src="{{book.Изображение}}" height="500" width="313" title="{{book.Название}}" align="left" hspace="20" vspace="20">
                         <font color="#F6A600" size="6"></font>
                         <br><br> <font color="#c0c0c0" size="3">{{book.Стр}} страниц          {{book.Рейтинг}} </font>
                         <br><br><br><font color="black" size="5"><b>О книге</b></font>

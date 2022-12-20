@@ -7,19 +7,16 @@
     <table border="0" width="100%" height="100%" cellpadding="14">
         <tr>
             <td height="10%" width="15%">
-                <a href="index.html"><img src="znak1.png" align="middle" title="Главная" width="75" height="50" hspace="6"></a>
+                <a href="/index"><img src="znak1.png" align="middle" title="Главная" width="75" height="50" hspace="6"></a>
             </td>
             <td height="10%" width="85%" valign="middle"> <font size="6"><center>Добро пожаловать в Книжную Полку!</center></font> <br></td>
         </tr>
         <tr>
             <td height="90%" width="15%" valign="top">
                 <br><br>
-                <a href="/classic">Классическая проза </a><br>
-                <br><a href="prince.html">Детектив </a><br>
-                <br><a href="/1984">{{book[0].Название}} </a><br>
-                <br><a href="bclub.html">Фэнтези </a> <br>
-                <br><a href="prestuplenie_i_nakazanie.html">Романтика </a><br>
-                <br><a href="prestuplenie_i_nakazanie.html">Приключения </a>
+                    <a href="/{{book1.Название}}">{{book1.Название}}</a><br>
+                <br><a href="/{{book2.Название}}">{{book2.Название}} </a><br>
+                <br><a href="/{{book3.Название}}">{{book3.Название}} </a><br>
             </td>
             <td height="90%" width="85%" valign="top" bgcolor="white">
                 <br> <br>
@@ -46,50 +43,32 @@
                     <!-- <font color="black"><img src="font1.jpg" height="84" width="500"> -->
                     <ul type="none">
                         <li>
-                            <font size="10" face="BrushType"><b>Классическая проза</b></font>
+                            <font size="10" face="BrushType" color="black"><b>{{book1.Название}}</b></font>
                         </li>
-                        <a href="master_i_margarita.html"><img src="master.jpg" height="200" width="125" title="Мастер и Маргарита" align="left" hspace="20" vspace="20"></a> <!-- <font color="#FF9900">Михаил Афанасьевич Булгаков</font> -->
-                        <br>Классическая литература — произведения художественной литературы, которые считаются эталоном для своей эпохи или того или иного жанра. Изначально термин «классическая литература» относился к определенным авторам античной литературы, а впоследствии использовался для обозначения всей древнегреческой и древнеримской литературы. Уже позже понятие стало использоваться в более широком смысле и означать образцовые для того или иного исторического периода произведения.
+                        <a href="/{{book1.Название}}"><img src="{{book1.Изображение}}" height="200" width="125" title="{{book1.Название}}" align="left" hspace="20" vspace="20"></a> <!-- <font color="#FF9900">Михаил Афанасьевич Булгаков</font> -->
+                       
 
-                        <font size="4"><a href="master_i_margarita.html" style="color: #ff8c00">Читать больше...</a></font>
+                        <font size="4"><a href="/{{book1.Название}}" style="color: #ff8c00">Узнать больше...</a></font>
 
                         <br clear="all">
 
                         <!-- <br clear="all"><img src="font1.jpg" height="84" width="500"> -->
                         <li>
-                            <font size="10" face="BrushType"><b>Детектив</b></font>
+                            <font size="10" face="BrushType" color="black"><b>{{book2.Название}}</b></font>
                         </li>
-                        <a href="prince.html"><img src="prince.jpg" height="200" width="125" title="Маленький принц" align="left" hspace="20" vspace="20"> </a> <!-- <font color="#FF9900">Антуан де Сент-Экзюпери</font> -->
-                        <br>Детекти́в (англ. detective, от лат. detego — раскрываю, разоблачаю) — преимущественно литературный и кинематографический жанр, произведения которого описывают процесс исследования загадочного происшествия с целью выяснения его обстоятельств и раскрытия загадки. Основной признак детектива как жанра — наличие в произведении некоего загадочного происшествия, обстоятельства которого неизвестны и должны быть выяснены. Наиболее часто описываемое происшествие — это преступление, хотя существуют детективы, в которых расследуются события, не являющиеся преступными.
-                        <font size="4"><a href="master_i_margarita.html" style="color: #ff8c00">Читать больше...</a></font>
+                        <a href="/{{book2.Название}}"><img src="{{book2.Изображение}}" height="200" width="125" title="{{book2.Изображение}}" align="left" hspace="20" vspace="20"> </a> <!-- <font color="#FF9900">Антуан де Сент-Экзюпери</font> -->
+                        
+                        <font size="4"><a href="/{{book2.Название}}" style="color: #ff8c00">Узнать больше...</a></font>
                         <br clear="all">
                         <li>
-                            <font size="10" face="BrushType"><b>Фантастика</b></font>
+                            <font size="10" face="BrushType" color="black"><b>{{book3.Название}}</b></font>
                         </li>
-                        <a href="1984.html"><img src="1984.jpg" height="200" width="125" title="1984" align="left" hspace="20" vspace="20"></a> <!-- <font color="#FF9900">Джордж Оруэлл</font> -->
-                        <br>Фанта́стика (от др.-греч. φανταστική — искусство воображения, фантазия) — жанр и творческий метод в художественной литературе, кино, изобразительном и других формах искусства, характеризуемый использованием фантастического допущения, «элемента необычайного», нарушением границ реальности, принятых условностей.
-                        <font size="4"><a href="1984.html" style="color: #ff8c00">Читать больше...</a></font>
+                        <a href="/{{book3.Название}}"><img src="{{book3.Изображение}}" height="200" width="125" title="{{book3.Название}}" align="left" hspace="20" vspace="20"></a> <!-- <font color="#FF9900">Джордж Оруэлл</font> -->
+                      
+                        <font size="4"><a href="/{{book3.Название}}" style="color: #ff8c00">Узнать больше...</a></font>
                         <br clear="all">
                         <li>
-                            <font size="10" face="BrushType"><b>Фэнтези</b></font>
-                        </li>
-                        <a href="bclub.html"><img src="bclub.jpe" height="200" width="125" title="Бойцовский клуб" align="left" hspace="20" vspace="20"></a> <!-- <font color="#FF9900">Чак Паланик</font> -->
-                        <br>Фэнтэзи – это жанр, сочетающий в себе мистику и реальные события. Мистическим при этом может выступать что угодно – от вымышленных автором существ до существ мифических, взятых из различных верований. Фэнтэзи, как жанр, возник достаточно давно – еще в середине девятнадцатого века. Истоком этого жанра принято считать мифологию.
-                        <font size="4"><a href="bclub.html" style="color: #ff8c00">Читать больше...</a></font>
-                        <br clear="all">
-                        <li>
-                            <font size="10" face="BrushType"><b>Романтика</b></font>
-                        </li>
-                        <a href="prestuplenie_i_nakazanie.html"><img src="prestuplenie.jpe" height="200" width="125" title="Преступление и наказание" align="left" hspace="15" vspace="15"> </a> <!-- <font color="#FF9900">Федор Михайлович Достоевский</font> -->
-                        <br>Романтика — жанр кинематографа и литературы. Произведения в этом жанре описывают историю любовных отношений, акцентируя внимание на чувствах и переживаниях героев. Часто предметом описания является красивая и глубокая любовь, которую не понимают окружающие и/или которой препятствуют сложные обстоятельства. Целевой аудиторией обычно считаются женщины, в связи с чем за литературными произведениями, написанными целиком в жанре любовной истории, закрепилось название «Женский (или „дамский“) роман».
-                        <font size="4"><a href="prestuplenie_i_nakazanie.html" style="color: #ff8c00">Читать больше...</a></font>
-                        <br clear="all">
-                        <li>
-                            <font size="10" face="BrushType"><b>Приключения</b></font>
-                        </li>
-                        <a href="prestuplenie_i_nakazanie.html"><img src="prestuplenie.jpe" height="200" width="125" title="Преступление и наказание" align="left" hspace="15" vspace="15"> </a><!-- <font color="#FF9900">Федор Михайлович Достоевский</font> -->
-                        <br style="color: #ff8c00">Приключения - жанр литературы, главная особенность которого заключается в том, что в его основе лежит занимательная, возбуждающая интерес история о реальных или вымышленных приключениях. В рассказе чаще всего речь идет о похищениях, преследованиях, поисках сокровищ, путешествиях, тайнах, загадках. Отличительной чертой этого жанра является динамический сюжет и накал страстей.
-                        <font size="4"><a href="prestuplenie_i_nakazanie.html" style="color: #ff8c00">Читать больше...</a></font>
+                
                         <br clear="all">
                         <br>
                         <br>
